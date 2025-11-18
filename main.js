@@ -15,9 +15,10 @@ let nilai = Number(document.getElementById('nilai').value)
     hasil = "Nilai B (baik)"
   } else if (nilai >= 50) {
     hasil = "Nilai C (cukup)"
-  } else if (nilai >= 0) {
+  } else if (nilai >= 30) {
     hasil = "Nilai D (kurang)"
-  }
+  }else if  (nilai >= 0)
+  hasil = "Nilai E (sangat jelek)"
     // tampilkan isi variabel "hasil"ke elemen "hasil"di html 
     document.getElementById('hasil').innerText = hasil
   }
